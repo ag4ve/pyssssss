@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pyssssss"
+version = "0.0.0"
+description = "Simple Scalable Secrets Store Solution for Snakes"
+authors = ["Shawn Wilson <srwilson@ioswitch.dev>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Flask = "^3.0.3"
+celery = {extras = ["redis"], version = "^5.4.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
